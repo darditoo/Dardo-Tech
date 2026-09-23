@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ventas Online | Discos Duros</title>
+
+    <link rel="stylesheet" href="productos.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="logo">
+            <span>VENTAS</span> ONLINE
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <!-- BOTÓN DEL CARRITO -->
+        <button class="btn-carrito" id="btnCarrito">
+            🛒
+            <span>Carrito</span>
+            <b id="contadorCarrito">0</b>
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-contenido">
+
+            <div>
+                <span class="etiqueta">TECNOLOGÍA Y ALMACENAMIENTO</span>
+
+                <h1>
+                    Potencia tu equipo con
+                    <span>el almacenamiento que necesitas.</span>
+                </h1>
+
+                <p>
+                    Encuentra discos SSD y HDD de diferentes capacidades
+                    y marcas a precios competitivos.
+                </p>
+
+                <a href="#productos" class="btn-principal">
+                    Ver productos
+                </a>
+            </div>
+
+            <div class="hero-icono">
+                💾
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+    <main id="productos">
+
+        <section class="productos-section">
+
+            <div class="titulo-section">
+                <span>CATÁLOGO</span>
+                <h2>Nuestros productos</h2>
+                <p>Selecciona el producto que deseas comprar.</p>
+            </div>
+
+
+            <!-- BUSCADOR Y FILTROS -->
+            <div class="controles">
+
+                <div class="buscador">
+                    🔍
+                    <input
+                        type="text"
+                        id="buscador"
+                        placeholder="Buscar producto o marca..."
+                    >
+                </div>
+
+                <div class="filtros">
+
+                    <button
+                        class="filtro activo"
+                        data-filtro="todos">
+                        Todos
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="SSD">
+                        SSD
+                    </button>
+
+                    <button
+                        class="filtro"
+                        data-filtro="HDD">
+                        HDD
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTENEDOR DE PRODUCTOS -->
+            <div class="productos-grid" id="listaProductos">
+
+                <!-- PRODUCTO 1 -->
+                <article
+                    class="producto"
+                    data-tipo="SSD"
+                    data-nombre="Disco Duro Western Digital"
+                    data-marca="Western Digital">
+
+                    <div class="producto-imagen">
+                        <img
+                            src="disco/images(1).jpg"
+                            alt="Disco Duro Western Digital"
+                        >
+
+                        <span class="tipo-producto">SSD</span>
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A001</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Western Digital
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>1 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 160.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A001"
+                                data-nombre="Disco Duro Western Digital"
+                                data-precio="160"
+                                data-imagen="disco/images(1).jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+                <article
+                    class="producto"
+                    data-tipo="HDD"
+                    data-nombre="Disco Duro Seagate"
+                    data-marca="Seagate">
+
+                    <div class="producto-imagen">
+                        <img
+                            src="disco/images.jpg"
+                            alt="Disco Duro Seagate"
+                        >
+
+                        <span class="tipo-producto hdd">
+                            HDD
+                        </span>
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A002</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Seagate
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>2 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 150.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A002"
+                                data-nombre="Disco Duro Seagate"
+                                data-precio="150"
+                                data-imagen="disco/images.jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+                <article
+                    class="producto"
+                    data-tipo="SSD"
+                    data-nombre="Disco Duro Samsung"
+                    data-marca="Samsung">
+
+                    <div class="producto-imagen">
+                        <img
+                            src="disco/images (1).jpg"
+                            alt="Disco Duro Samsung"
+                        >
+
+                        <span class="tipo-producto">
+                            SSD
+                        </span>
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A003</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Samsung
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>2 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 190.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A003"
+                                data-nombre="Disco Duro Samsung"
+                                data-precio="190"
+                                data-imagen="disco/images (1).jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+                <article
+                    class="producto"
+                    data-tipo="SSD"
+                    data-nombre="Disco Duro Corsair"
+                    data-marca="Corsair">
+
+                    <div class="producto-imagen">
+                        <img
+                            src="disco/images.jpg"
+                            alt="Disco Duro Corsair"
+                        >
+
+                        <span class="tipo-producto">
+                            SSD
+                        </span>
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A004</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Corsair
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>2 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 150.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A004"
+                                data-nombre="Disco Duro Corsair"
+                                data-precio="150"
+                                data-imagen="disco/images.jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 5 -->
+                <article
+                    class="producto"
+                    data-tipo="SSD"
+                    data-nombre="Disco Duro Western Digital 1TB"
+                    data-marca="Western Digital">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="disco/images(1).jpg"
+                            alt="Western Digital 1TB"
+                        >
+
+                        <span class="tipo-producto">
+                            SSD
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A005</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Western Digital
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>1 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 160.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A005"
+                                data-nombre="Disco Duro Western Digital 1TB"
+                                data-precio="160"
+                                data-imagen="disco/images(1).jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 6 -->
+                <article
+                    class="producto"
+                    data-tipo="HDD"
+                    data-nombre="Disco Duro Seagate 2TB"
+                    data-marca="Seagate">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="disco/images.jpg"
+                            alt="Seagate 2TB"
+                        >
+
+                        <span class="tipo-producto hdd">
+                            HDD
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A006</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Seagate
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>2 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 150.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A006"
+                                data-nombre="Disco Duro Seagate 2TB"
+                                data-precio="150"
+                                data-imagen="disco/images.jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 7 -->
+                <article
+                    class="producto"
+                    data-tipo="SSD"
+                    data-nombre="Disco Duro Samsung 2TB"
+                    data-marca="Samsung">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="disco/images (1).jpg"
+                            alt="Samsung 2TB"
+                        >
+
+                        <span class="tipo-producto">
+                            SSD
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A007</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Samsung
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>2 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 190.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A007"
+                                data-nombre="Disco Duro Samsung 2TB"
+                                data-precio="190"
+                                data-imagen="disco/images (1).jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 8 -->
+                <article
+                    class="producto"
+                    data-tipo="SSD"
+                    data-nombre="Disco Duro Corsair 2TB"
+                    data-marca="Corsair">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="disco/images.jpg"
+                            alt="Corsair 2TB"
+                        >
+
+                        <span class="tipo-producto">
+                            SSD
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A008</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Corsair
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>2 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 150.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A008"
+                                data-nombre="Disco Duro Corsair 2TB"
+                                data-precio="150"
+                                data-imagen="disco/images.jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 9 -->
+                <article
+                    class="producto"
+                    data-tipo="SSD"
+                    data-nombre="Disco Duro Samsung 2TB"
+                    data-marca="Samsung">
+
+                    <div class="producto-imagen">
+
+                        <img
+                            src="disco/images (1).jpg"
+                            alt="Samsung 2TB"
+                        >
+
+                        <span class="tipo-producto">
+                            SSD
+                        </span>
+
+                    </div>
+
+                    <div class="producto-info">
+
+                        <small>Código: A009</small>
+
+                        <h3>Disco Duro</h3>
+
+                        <p class="marca">
+                            Samsung
+                        </p>
+
+                        <p class="capacidad">
+                            💾 Capacidad: <strong>2 TB</strong>
+                        </p>
+
+                        <div class="producto-abajo">
+
+                            <span class="precio">
+                                S/ 190.00
+                            </span>
+
+                            <button
+                                class="btn-agregar"
+                                data-id="A009"
+                                data-nombre="Disco Duro Samsung 2TB"
+                                data-precio="190"
+                                data-imagen="disco/images (1).jpg">
+
+                                + Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p id="sinResultados" class="sin-resultados">
+                No se encontraron productos.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= CARRITO ================= -->
+
+    <div class="fondo-carrito" id="fondoCarrito"></div>
+
+    <aside class="carrito" id="carrito">
+
+        <div class="carrito-header">
+
+            <div>
+                <span>🛒</span>
+                <h2>Mi carrito</h2>
+            </div>
+
+            <button id="cerrarCarrito" class="cerrar">
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="carrito-productos"
+            id="carritoProductos">
+
+            <!-- Javascript insertará los productos aquí -->
+
+        </div>
+
+
+        <div class="carrito-vacio" id="carritoVacio">
+
+            <div>🛒</div>
+
+            <h3>Tu carrito está vacío</h3>
+
+            <p>
+                Agrega algunos productos para comenzar.
+            </p>
+
+        </div>
+
+
+        <div class="carrito-footer">
+
+            <div class="resumen">
+
+                <div>
+                    <span>Productos:</span>
+                    <strong id="cantidadTotal">0</strong>
+                </div>
+
+                <div class="total">
+                    <span>Total:</span>
+                    <strong id="totalCarrito">
+                        S/ 0.00
+                    </strong>
+                </div>
+
+            </div>
+
+            <button
+                class="btn-comprar"
+                id="btnComprar">
+
+                Finalizar compra
+
+            </button>
+
+            <button
+                class="btn-vaciar"
+                id="btnVaciar">
+
+                Vaciar carrito
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= NOTIFICACIÓN ================= -->
+
+    <div
+        class="notificacion"
+        id="notificacion">
+
+        <span>✓</span>
+        <p>Producto agregado al carrito</p>
+
+    </div>
+
+
+    <!-- ================= OFERTAS ================= -->
+
+    <section class="ofertas" id="ofertas">
+
+        <div>
+
+            <span>OFERTA ESPECIAL</span>
+
+            <h2>
+                Encuentra tecnología
+                para tu próximo proyecto.
+            </h2>
+
+            <p>
+                Compra productos de almacenamiento con
+                diferentes capacidades y tecnologías.
+            </p>
+
+            <a href="#productos" class="btn-principal">
+                Comprar ahora
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contacto">
+
+        <div class="footer-contenido">
+
+            <div>
+
+                <h2>VENTAS ONLINE</h2>
+
+                <p>
+                    Tu tienda online de tecnología.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Información</h3>
+
+                <p>Ventas en línea</p>
+                <p>Ventas por catálogo</p>
+                <p>Servicio delivery</p>
+
+            </div>
+
+            <div>
+
+                <h3>Contacto</h3>
+
+                <p>📞 +51 999 999 999</p>
+                <p>✉ ventas@ejemplo.com</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 Ventas Online.
+            Todos los derechos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <script src="productos.js"></script>
+
+</body>
+</html>
